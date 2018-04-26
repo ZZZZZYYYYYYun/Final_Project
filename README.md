@@ -42,6 +42,16 @@ We assumed we had two options for the restaurant. The location will cause two di
 * Profit: this variable is for each customer. We assume it's a normal distribution, while the min value is 1 and max value is 4. 
 
 ## Hypothesis or hypotheses before running the simulation:
+1.	We assume that the two places we choose are different between weekdays and weekends. This hypothesis will make these two places typical.
+
+2.	Customers will prefer to spend more time on dinner than lunch.
+
+3.	The profit (per person) will be more for dinner than for lunch.
+
+4.	The rental fee only related to the location and the area it has.
+
+5.	The time customers spend in the restaurants will be in a range we set.
+
 
 ## Analytical Summary of your findings: (e.g. Did you adjust the scenario based on previous simulation outcomes?  What are the management decisions one could make from your simulation's output, etc.)
 
