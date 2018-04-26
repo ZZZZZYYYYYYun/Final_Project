@@ -3,7 +3,7 @@ Create a FORK of this repository to store your code, data, and documentation for
 Even though your fork of this repository shall be public, you'll still need to explicitly add any students on your team as Collaborators in the Settings. That way you can grant them write privileges.
 
 
-# Title: 
+# Title: JPYY Restaurant Location and Size Decision Maker
 
 ## Team Member(s): Jianshan Yang，Parth Ved，Yanyu Wang，Yun Zhou
 (Note: Don't put your email addresses here (which is public).  If a student wants their NAME hidden as well, due to optional FERPA regulations, they can be listed purely by their GitHub ID).
