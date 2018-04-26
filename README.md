@@ -38,11 +38,11 @@ These factors will determine the profit together.
 
 ## Simulation's variables of uncertainty
 We assumed we had two options for the restaurant. The location will cause two different pseuda-random variables, one is the total number of customers and the other one is profit we get from every customer. The third variable we get is dinning time for every customer. 
-* 1. Total number of customers: For this variable, we built a function as generator to get how many customers we will have and how they distribution. We set the open time from 11:00AM to 2:00PM, for every minute, the max customers is 5, min customers is 0, and the mostly customers is 2. Base on the PERT distribution, we can get a serial array to get how many customers we supports to have during this time. We distributed the customers as a PERT distribution from 11:00 AM to 2:00PM and the most customers will happen on 12:00PM.
+* Total number of customers: For this variable, we built a function as generator to get how many customers we will have and how they distribution. We set the open time from 11:00AM to 2:00PM, for every minute, the max customers is 5, min customers is 0, and the mostly customers is 2. Base on the PERT distribution, we can get a serial array to get how many customers we supports to have during this time. We distributed the customers as a PERT distribution from 11:00 AM to 2:00PM and the most customers will happen on 12:00PM.
 
-* 2. dining time: This variable is used to check if the restaurant table is avaiable. We set the range is from 0 to 40, less than 3 means the customer come for picking up. They won't use the table. We set highest frequency time is 15. So this will be another PERT distribution. 
+* Dining time: This variable is used to check if the restaurant table is avaiable. We set the range is from 0 to 40, less than 3 means the customer come for picking up. They won't use the table. We set highest frequency time is 15. So this will be another PERT distribution. 
 
-* 3.Profit: this variable is for each customer. We assume it's a normal distribution, while the min value is 1 and max value is 4. 
+* Profit: this variable is for each customer. We assume it's a normal distribution, while the min value is 1 and max value is 4. 
 
 ## Hypothesis or hypotheses before running the simulation:
 
