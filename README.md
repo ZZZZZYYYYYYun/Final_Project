@@ -18,12 +18,16 @@ Nowdays, investors planning to invest in properties often consider various facto
 In this project, our group are trying to simulate the weekly profit of restaurants in different locations. 
 We choose two places, one is a restaurant near Green Street, and another is a restaurant in Savoy. For the restaurant in our university, there may be a lot of people during weekdays, nevertheless, the number of customers on weekends may be less. For the restaurant in Savoy, there may be more customers on weekends than during weekdays. 
 Based on this situation, we decide to calculate the weekly profits that each restaurant may make and decide which place is better to run a restaurant.
-The process of our analysis is top-down. 
+The process of our analysis is top-down.
+
 1.	Profit = Income – Expenses
+
 Usually the profit is represented as this equation. In our project, we suppose that the only expense related to our project is the rental fee. Rental fee depends on the size of the restaurant. Hence, we simplify the profit to be related to the profit of each person and rental fee.
 
 And we get this equation:
+
 2.	Profit = Profit Per Person – Rental Fee
+
 The process for a customer in a restaurant is decided as:
  wait in line(optional), order, decide to go or in restaurant, eating time (if eat in restaurant)
 Under this situation, we decide these factors: the time of waiting in line, the time customers stay, the total tables (depend on the size of the restaurant), the total number in the restaurant, customers per minutes during specific period (noon, evening).
