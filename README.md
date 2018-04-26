@@ -26,5 +26,6 @@ List and describe your simulation's variables of uncertainty (where you're using
 
 ## All Sources Used:
 【1】Kimes, Sheryl E., Jochen Wirtz, and Breffni M. Noone. "How long should dinner take? Measuring expected meal duration for restaurant revenue management." Journal of Revenue and Pricing Management 1.3 (2002): 220-233.
+
 【2】Dorr, John A. "Restaurant management information and control method and apparatus." U.S. Patent No. 4,530,067. 16 Jul. 1985.
 We search the information about the Business Model of restuarants and could calculate the number of people come to the restaurants. We also know the longest time they would like to wait in a restaurant.
