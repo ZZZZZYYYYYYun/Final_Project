@@ -7,7 +7,7 @@ Jianshan Yang，Parth Ved，Yanyu Wang，Yun Zhou
 # Monte Carlo Simulation Scenario & Purpose:
 Nowdays, investors planning to invest in properties often consider various factors before actually picking a property. We are considering Monte Carlo Simulation for Resturant owner and what would be the best location for them to open a new resturant. The main purpose of the project is to determine which location would yeild more profit and in turn is a better location. We also ask the owner for the resturant size preference and based on it, we would provide the result. 
 
-In this project, we are trying to simulate the weekly profit of restaurants in different locations.
+In this project, we are trying to simulate the monthly profit of restaurants in different locations.
 We choose two places, one is a restaurant closer to the campus area of a University (for example Green Street, Champaign, Illinois), and another at some distance from the campus area of the city (For example, Savoy, Champaign, Illinois). For the restaurant in the campus area, there may be a lot of people during weekdays, nevertheless, the number of customers on weekends may be less. For the restaurant in Savoy, there may be more customers on weekends than during weekdays. Based on this situation, we decide to calculate the weekly profits that each restaurant may make and decide which place is better to run a restaurant.
 
 The process of our analysis is top-down.
