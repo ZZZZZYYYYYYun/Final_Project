@@ -118,10 +118,14 @@ We assume we have three options for the restaurant. The location will cause two 
 7.	The time customers spend in the restaurants will be in a range we set.
 
 
-## Analytical Summary of your findings: (e.g. Did you adjust the scenario based on previous simulation outcomes?  What are the management decisions one could make from your simulation's output, etc.)
-
+## Analytical Summary of findings:
+* We simulation the scenario 500 times, and find location A is the best.
+* We adjust the scenario, to make location B only have 2 servers, location B is the best
 ## Instructions on how to use the program:
-
+Download the Simulation.py and run.
+The parameter simulation_time can be changed. The more time we simulate, the higher accuracy we should get.
+## Future work:
+In this program, most of paramters are revisable, which means this program can be used to any place if users want to use for another place. Next step will be modified the program to let the user to enter their data, simulate the scenario for them.
 ## All Sources Used:
 【1】Kimes, Sheryl E., Jochen Wirtz, and Breffni M. Noone. "How long should dinner take? Measuring expected meal duration for restaurant revenue management." Journal of Revenue and Pricing Management 1.3 (2002): 220-233.
 
