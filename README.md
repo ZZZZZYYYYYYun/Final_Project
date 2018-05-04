@@ -121,6 +121,7 @@ We assume we have three options for the restaurant. The location will cause two 
 ## Analytical Summary of findings:
 * We simulation the scenario 500 times, and find location A is the best.
 * We adjust the scenario, to make location B only have 2 servers, location B is the best
+* The profits for location A and C don't have a lot of differences, if we print all the profits out
 ## Instructions on how to use the program:
 Download the Simulation.py and run.
 The parameter simulation_time can be changed. The more time we simulate, the higher accuracy we should get.
