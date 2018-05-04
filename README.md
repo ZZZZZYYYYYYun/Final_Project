@@ -53,6 +53,7 @@ We assume we have three options for the restaurant. The location will cause two 
             * Profit from each customer: 0.5 - 10 per customer, 2 has the highest frequency.
         * Sat (dinner time): 5pm - 10pm(300 mins)
             * Customer distribution: 0-5 per 3 mins, 2 has the highest frequency. 
+            * Stay time: 0 - 90 mins, 40 has the highest frequency.
             * From 0 - 300 min, the fastigium appears around 90, which means 6:30pm.
             * Profit from each customer: 2 - 20 per customer, 5 has the highest frequency.
 
@@ -75,18 +76,46 @@ We assume we have three options for the restaurant. The location will cause two 
             * Profit from each customer: 0.5 - 10 per customer, 2 has the highest frequency.
         * Sat (dinner time): 5pm - 10pm(300 mins)
             * Customer distribution: 0-5 per 3 mins, 2 has the highest frequency. 
+            * Stay time: 0 - 90 mins, 40 has the highest frequency.
             * From 0 - 300 min, the fastigium appears around 90, which means 6:30pm.
             * Profit from each customer: 2 - 20 per customer, 5 has the highest frequency.
+
+* Location C(busy place during weekend and night: 40 tables, max queue 15, 2 chef, 2 servers)
+    * Open: Tue - Sun
+        * Tue - Fri (lunch time): 11am - 2pm(180 mins)
+            * Customer distribution: 0-5 per 3 mins, 2 has the highest frequency. 
+            * Stay time: 0 - 40 mins, 15 has the highest frequency.
+            * From 0 - 180 min, the fastigium appears around 60, which means 12am.
+            * Profit from each customer: 0.5 - 12 per customer, 3 has the highest frequency.
+        * Tue - Fri (dinner time): 5pm - 10pm(300 mins)
+            * Customer distribution: 0-5 per 3 mins, 2 has the highest frequency. 
+            * Stay time: 0 - 90 mins, 40 has the highest frequency.
+            * From 0 - 300 min, the fastigium appears around 90, which means 6:30pm.
+            * Profit from each customer: 3 - 20 per customer, 6 has the highest frequency.
+        * Sat - Sun (lunch time): 11am - 2pm(180 mins)
+            * Customer distribution: 0-5 per 3 mins, 2 has the highest frequency. 
+            * Stay time: 0 - 40 mins, 15 has the highest frequency.
+            * From 0 - 180 min, the fastigium appears around 60, which means 12am.
+            * Profit from each customer: 0.5 - 10 per customer, 2 has the highest frequency.
+        * Sat - Sun (dinner time): 5pm - 10pm(300 mins)
+            * Customer distribution: 0-5 per 2 mins, 2 has the highest frequency. 
+            * Stay time: 0 - 90 mins, 40 has the highest frequency.
+            * From 0 - 300 min, the fastigium appears around 90, which means 6:30pm.
+            * Profit from each customer: 2 - 20 per customer, 5 has the highest frequency.           
 ## Hypothesis or hypotheses before running the simulation:
-1.	We assume that the two places we choose are different between weekdays and weekends. This hypothesis will make these two places typical.
+1.	We assume that the a,b and c location we choose are different between weekdays and weekends. This hypothesis will make these three location typical.
 
-2.	Customers will prefer to spend more time on dinner than lunch.
+2.  Every customer will use one individually.
 
-3.	The profit (per person) will be more for dinner than for lunch.
+3.	Customers will prefer to spend more time on dinner than lunch.
 
-4.	The rental fee only related to the location and the area it has.
+4.  Customers may leave randomly if the line hit the limit value.
 
-5.	The time customers spend in the restaurants will be in a range we set.
+5.	The profit (per person) will be more for dinner than for lunch.
+
+6.	The rental fee only related to the location and the area it has.
+
+7.	The time customers spend in the restaurants will be in a range we set.
 
 
 ## Analytical Summary of your findings: (e.g. Did you adjust the scenario based on previous simulation outcomes?  What are the management decisions one could make from your simulation's output, etc.)

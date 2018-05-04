@@ -368,7 +368,7 @@ def c_location():
             else:
                 # we assume on weekend we only get 1/3 customers of weekday
                 # customers for lunch
-                a = ArrayGen(0,2,5,60) # customers for 3 hours, generator works every minute from 0 - 5, while 2 has highest frequence.
+                a = ArrayGen(0,2,5,60) # customers for 3 hours, generator works every 3 minute from 0 - 5, while 2 has highest frequence.
                 noon_customers = customerGen(a.arr,0,20,60,60)
                 stay_time = mod_pert_random(0, 15, 40, samples=1000)
                 customers_list = pair_c(40,noon_customers,3,15,stay_time)
