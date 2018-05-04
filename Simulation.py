@@ -84,6 +84,9 @@ def check_table(table):
     :param table: a list contains our list to represent our tables, if the element is 0, which means the table is available.
     otherwise it's unavailable and until the time run out.
     :return: how many are the tables available now
+    >>> table = [1,0,2,0]
+    >>> check_table(table)
+    2
     '''
     counter = 0
     for i in table:
@@ -405,7 +408,7 @@ def c_location():
 
 def main():
     counter = {'a':0,'b':0,'c':0}
-    simulation_times = 500
+    simulation_times = 1
     for i in range(simulation_times):
         dic = {}
         dic['a'],dic['b'],dic['c'] = a_location(),b_location(),c_location()
