@@ -34,22 +34,49 @@ These factors will determine the profit together.
 ## Simulation's variables of uncertainty
 We assume we have three options for the restaurant. The location will cause two different pseudo-random variables, one is the total number of customers and the other one is profit we get from every customer. The third variable we get is dinning time for every customer. 
 
-* Location A(busy place during weekday: 40 tables, max queue 15)
+* Location A(busy place during weekday: 40 tables, max queue 15, 2 chef, 2 servers)
     * Open: Mon - Sat
-    * Mon - Fri (lunch time): 11am - 2pm(180 mins)
-        * Customer distribution: 0-5 per min, 2 has the highest frequency. 
-        * From 0 - 180 min, the fastigium appears around 60, which means 12am.
-        * Profit from each customer: 0.5 - 10 per customer, 2 has the highest frequency.
-    * Mon - Fri (dinner time): 5pm - 10pm(300 mins)
-        * Customer distribution: 0-5 per 3 mins, 2 has the highest frequency. 
-        * From 0 - 300 min, the fastigium appears around 90, which means 6:30pm.
-        * Profit from each customer: 2 - 20 per customer, 5 has the highest frequency.
-* Total number of customers: For this variable, we built a function as generator to get how many customers we will have and how they distribution. We set the open time from 11:00AM to 2:00PM, for every minute, the max customers is 5, min customers is 0, and on most occasions customer count is 2. Base on the PERT distribution, we can get a serial array to get how many customers the resturant could accomodate during this time. We distributed the customers as a PERT distribution from 11:00 AM to 2:00PM and the most customers visit at 12:00PM.
+        * Mon - Fri (lunch time): 11am - 2pm(180 mins)
+            * Customer distribution: 0-5 per min, 2 has the highest frequency. 
+            * Stay time: 0 - 40 mins, 15 has the highest frequency.
+            * From 0 - 180 min, the fastigium appears around 60, which means 12am.
+            * Profit from each customer: 0.5 - 10 per customer, 2 has the highest frequency.
+        * Mon - Fri (dinner time): 5pm - 10pm(300 mins)
+            * Customer distribution: 0-5 per 3 mins, 2 has the highest frequency. 
+            * Stay time: 0 - 90 mins, 40 has the highest frequency.
+            * From 0 - 300 min, the fastigium appears around 90, which means 6:30pm.
+            * Profit from each customer: 2 - 20 per customer, 5 has the highest frequency.
+        * Sat (lunch time): 11am - 2pm(180 mins)
+            * Customer distribution: 0-5 per 3 mins, 2 has the highest frequency. 
+            * Stay time: 0 - 40 mins, 15 has the highest frequency.
+            * From 0 - 180 min, the fastigium appears around 60, which means 12am.
+            * Profit from each customer: 0.5 - 10 per customer, 2 has the highest frequency.
+        * Sat (dinner time): 5pm - 10pm(300 mins)
+            * Customer distribution: 0-5 per 3 mins, 2 has the highest frequency. 
+            * From 0 - 300 min, the fastigium appears around 90, which means 6:30pm.
+            * Profit from each customer: 2 - 20 per customer, 5 has the highest frequency.
 
-* Dining time: This variable is used to check if the restaurant table is avaiable. We set the range as 0 to 40, less than 3 means the customer come for picking up. They won't use the table. We set highest frequency time as 15. So this will be another PERT distribution. 
-
-* Profit: This variable is for each customer. We assume it's a normal distribution, while the min value is 1 and max value is 4. 
-
+* Location B(busy place during weekday: 60 tables, max queue 18, 2 chef, 2 or 3 servers)
+    * Open: Mon - Sat
+        * Mon - Fri (lunch time): 11am - 2pm(180 mins)
+            * Customer distribution: 0-5 per min, 2 has the highest frequency. 
+            * Stay time: 0 - 40 mins, 15 has the highest frequency.
+            * From 0 - 180 min, the fastigium appears around 60, which means 12am.
+            * Profit from each customer: 0.5 - 10 per customer, 2 has the highest frequency.
+        * Mon - Fri (dinner time): 5pm - 10pm(300 mins)
+            * Customer distribution: 0-5 per 3 mins, 2 has the highest frequency. 
+            * Stay time: 0 - 90 mins, 40 has the highest frequency.
+            * From 0 - 300 min, the fastigium appears around 90, which means 6:30pm.
+            * Profit from each customer: 2 - 20 per customer, 5 has the highest frequency.
+        * Sat (lunch time): 11am - 2pm(180 mins)
+            * Customer distribution: 0-5 per 3 mins, 2 has the highest frequency. 
+            * Stay time: 0 - 40 mins, 15 has the highest frequency.
+            * From 0 - 180 min, the fastigium appears around 60, which means 12am.
+            * Profit from each customer: 0.5 - 10 per customer, 2 has the highest frequency.
+        * Sat (dinner time): 5pm - 10pm(300 mins)
+            * Customer distribution: 0-5 per 3 mins, 2 has the highest frequency. 
+            * From 0 - 300 min, the fastigium appears around 90, which means 6:30pm.
+            * Profit from each customer: 2 - 20 per customer, 5 has the highest frequency.
 ## Hypothesis or hypotheses before running the simulation:
 1.	We assume that the two places we choose are different between weekdays and weekends. This hypothesis will make these two places typical.
 
