@@ -12,7 +12,6 @@ class ArrayGen():
     This is the generator to get the customers want to come to our restaurant during the open hours.
     >>> a = ArrayGen(0,2,5,180)
     >>> customers = customerGen(a.arr,0,60,180,180)
-    >>> customers
     '''
 
     def __init__(self,low,likly,high,sample,confidence=4):
